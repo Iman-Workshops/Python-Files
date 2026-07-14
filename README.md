@@ -4,7 +4,6 @@
   <img alt="Python 3.10+" src="https://img.shields.io/badge/Python-3.10%2B-3776AB">
   <img alt="Standard library only" src="https://img.shields.io/badge/Standard%20library-only-2ea44f">
   <img alt="Persian documentation" src="https://img.shields.io/badge/Docs-Persian-blue">
-  <img alt="MIT license" src="https://img.shields.io/badge/License-MIT-yellow">
 </p>
 
 این مخزن یک منبع آموزشی فارسی برای یادگیری کار با فایل‌ها در پایتون است. مسیر یادگیری از فایل متنی ساده شروع می‌شود و به داده ساخت‌یافته، لاگ، مدیریت خطا، فایل باینری، آرشیو، پردازش جریانی و پروژه پایانی می‌رسد.
@@ -22,7 +21,6 @@
 - [تمرین‌ها و پاسخ‌ها](#practice)
 - [نکته‌های آموزشی](#teaching-notes)
 - [خطاهای رایج](#common-errors)
-- [مجوز](#license)
 
 <a id="overview"></a>
 ## معرفی پروژه
@@ -118,70 +116,145 @@ python practice_solution.py
 ├── example2.py
 ├── ...
 ├── example18.py
-├── LICENSE
 └── .gitignore
 ```
 
 نقش فایل‌های اصلی:
 
-| فایل | نقش |
-| --- | --- |
-| فایل <span dir="ltr"><code>README.md</code></span> | راهنمای اصلی مخزن برای GitHub |
-| فایل <span dir="ltr"><code>Notes.txt</code></span> | طرح درس و توضیح مفاهیم برای مدرس یا خودخوانی |
-| فایل <span dir="ltr"><code>practice_tasks.md</code></span> | تمرین‌های مرحله‌ای از مقدماتی تا پروژه پایانی |
-| فایل <span dir="ltr"><code>practice_solution_beginner.py</code></span> | پاسخ نمونه تمرین‌های مقدماتی |
-| فایل <span dir="ltr"><code>practice_solution_intermediate.py</code></span> | پاسخ نمونه تمرین‌های میانی |
-| فایل <span dir="ltr"><code>practice_solution_advanced.py</code></span> | پاسخ نمونه تمرین‌های تکمیلی |
-| فایل <span dir="ltr"><code>practice_solution.py</code></span> | پاسخ نمونه پروژه پایانی |
-| پوشه <span dir="ltr"><code>workshop_output</code></span> | پوشه خروجی اجراها، در گیت ذخیره نمی‌شود |
+<table dir="rtl">
+  <thead>
+    <tr>
+      <th>فایل</th>
+      <th>نقش</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>فایل <span dir="ltr"><code>README.md</code></span></td>
+      <td>راهنمای اصلی مخزن برای GitHub</td>
+    </tr>
+    <tr>
+      <td>فایل <span dir="ltr"><code>Notes.txt</code></span></td>
+      <td>طرح درس و توضیح مفاهیم برای مدرس یا خودخوانی</td>
+    </tr>
+    <tr>
+      <td>فایل <span dir="ltr"><code>practice_tasks.md</code></span></td>
+      <td>تمرین‌های مرحله‌ای از مقدماتی تا پروژه پایانی</td>
+    </tr>
+    <tr>
+      <td>فایل <span dir="ltr"><code>practice_solution_beginner.py</code></span></td>
+      <td>پاسخ نمونه تمرین‌های مقدماتی</td>
+    </tr>
+    <tr>
+      <td>فایل <span dir="ltr"><code>practice_solution_intermediate.py</code></span></td>
+      <td>پاسخ نمونه تمرین‌های میانی</td>
+    </tr>
+    <tr>
+      <td>فایل <span dir="ltr"><code>practice_solution_advanced.py</code></span></td>
+      <td>پاسخ نمونه تمرین‌های تکمیلی</td>
+    </tr>
+    <tr>
+      <td>فایل <span dir="ltr"><code>practice_solution.py</code></span></td>
+      <td>پاسخ نمونه پروژه پایانی</td>
+    </tr>
+    <tr>
+      <td>پوشه <span dir="ltr"><code>workshop_output</code></span></td>
+      <td>پوشه خروجی اجراها، در گیت ذخیره نمی‌شود</td>
+    </tr>
+  </tbody>
+</table>
 
 <a id="learning-path"></a>
 ## مسیر یادگیری
 
 پیشنهاد می‌شود فایل‌ها با همین ترتیب اجرا شوند:
 
-| بخش | نمونه‌ها | تمرکز |
-| --- | --- | --- |
-| پایه فایل متنی | نمونه‌های <span dir="ltr"><code>example1.py</code></span> تا <span dir="ltr"><code>example5.py</code></span> | حالت‌های فایل، کدگذاری، خواندن خطی، context manager و مسیرها |
-| داده ساخت‌یافته | نمونه‌های <span dir="ltr"><code>example6.py</code></span> تا <span dir="ltr"><code>example10.py</code></span> | قالب‌های <span dir="ltr"><code>JSON</code></span> و <span dir="ltr"><code>CSV</code></span>، لاگ و گزارش‌گیری |
-| خطا و ابزارهای فایل | نمونه‌های <span dir="ltr"><code>example11.py</code></span>، <span dir="ltr"><code>example12.py</code></span> و <span dir="ltr"><code>example14.py</code></span> تا <span dir="ltr"><code>example18.py</code></span> | مدیریت خطا، باینری، نوشتن امن، پیمایش پوشه، zip، پردازش جریانی و INI |
-| پروژه پایانی | نمونه <span dir="ltr"><code>example13.py</code></span> | خواندن CSV، فیلتر، لاگ و ساخت گزارش JSON |
+<table dir="rtl">
+  <thead>
+    <tr>
+      <th>بخش</th>
+      <th>نمونه‌ها</th>
+      <th>تمرکز</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>پایه فایل متنی</td>
+      <td>نمونه‌های <span dir="ltr"><code>example1.py</code></span> تا <span dir="ltr"><code>example5.py</code></span></td>
+      <td>حالت‌های فایل، کدگذاری، خواندن خطی، context manager و مسیرها</td>
+    </tr>
+    <tr>
+      <td>داده ساخت‌یافته</td>
+      <td>نمونه‌های <span dir="ltr"><code>example6.py</code></span> تا <span dir="ltr"><code>example10.py</code></span></td>
+      <td>قالب‌های <span dir="ltr"><code>JSON</code></span> و <span dir="ltr"><code>CSV</code></span>، لاگ و گزارش‌گیری</td>
+    </tr>
+    <tr>
+      <td>خطا و ابزارهای فایل</td>
+      <td>نمونه‌های <span dir="ltr"><code>example11.py</code></span>، <span dir="ltr"><code>example12.py</code></span> و <span dir="ltr"><code>example14.py</code></span> تا <span dir="ltr"><code>example18.py</code></span></td>
+      <td>مدیریت خطا، باینری، نوشتن امن، پیمایش پوشه، zip، پردازش جریانی و INI</td>
+    </tr>
+    <tr>
+      <td>پروژه پایانی</td>
+      <td>نمونه <span dir="ltr"><code>example13.py</code></span></td>
+      <td>خواندن CSV، فیلتر، لاگ و ساخت گزارش JSON</td>
+    </tr>
+  </tbody>
+</table>
 
 <a id="examples-table"></a>
 ## جدول نمونه‌ها
 
-| شماره | فایل | مفهوم اصلی | خروجی مهم |
-| --- | --- | --- | --- |
-| 1 | فایل <span dir="ltr"><code>example1.py</code></span> | حالت‌های <span dir="ltr"><code>r</code></span>، <span dir="ltr"><code>w</code></span>، <span dir="ltr"><code>a</code></span> و <span dir="ltr"><code>r+</code></span> | فایل متنی <span dir="ltr"><code>modes.txt</code></span> |
-| 2 | فایل <span dir="ltr"><code>example2.py</code></span> | کدگذاری <span dir="ltr"><code>utf-8</code></span>، <span dir="ltr"><code>BOM</code></span> و خطای decode | فایل‌های متنی فارسی |
-| 3 | فایل <span dir="ltr"><code>example3.py</code></span> | روش‌های <span dir="ltr"><code>read</code></span>، <span dir="ltr"><code>readline</code></span> و <span dir="ltr"><code>readlines</code></span> | فایل چندخطی |
-| 4 | فایل <span dir="ltr"><code>example4.py</code></span> | بستن خودکار فایل با context manager | فایل <span dir="ltr"><code>context_manager.txt</code></span> |
-| 5 | فایل <span dir="ltr"><code>example5.py</code></span> | مسیرها با <span dir="ltr"><code>pathlib.Path</code></span> و جست‌وجو با <span dir="ltr"><code>glob</code></span> | پوشه نمونه مسیرها |
-| 6 | فایل <span dir="ltr"><code>example6.py</code></span> | داده تو در تو و خطای JSON خراب | فایل <span dir="ltr"><code>profile.json</code></span> |
-| 7 | فایل <span dir="ltr"><code>example7.py</code></span> | خواندن و نوشتن CSV با سرستون | فایل <span dir="ltr"><code>people.csv</code></span> |
-| 8 | فایل <span dir="ltr"><code>example8.py</code></span> | جداکننده سفارشی و نقل‌قول در CSV | فایل <span dir="ltr"><code>courses_semicolon.csv</code></span> |
-| 9 | فایل <span dir="ltr"><code>example9.py</code></span> | سطح‌های لاگ و قالب پیام | فایل <span dir="ltr"><code>app.log</code></span> |
-| 10 | فایل <span dir="ltr"><code>example10.py</code></span> | فیلتر و تجمیع CSV در گزارش JSON | فایل <span dir="ltr"><code>sales_report.json</code></span> |
-| 11 | فایل <span dir="ltr"><code>example11.py</code></span> | خطاهای فایل با <span dir="ltr"><code>try</code></span>، <span dir="ltr"><code>except</code></span> و <span dir="ltr"><code>finally</code></span> | خواندن امن فایل |
-| 12 | فایل <span dir="ltr"><code>example12.py</code></span> | تفاوت فایل متنی و فایل باینری | فایل <span dir="ltr"><code>bytes_sample.bin</code></span> |
-| 13 | فایل <span dir="ltr"><code>example13.py</code></span> | پروژه پایانی، CSV، لاگ و گزارش JSON | فایل <span dir="ltr"><code>capstone_report.json</code></span> |
-| 14 | فایل <span dir="ltr"><code>example14.py</code></span> | نوشتن امن با فایل موقت و پشتیبان | فایل <span dir="ltr"><code>inventory.json</code></span> |
-| 15 | فایل <span dir="ltr"><code>example15.py</code></span> | پیمایش پوشه با <span dir="ltr"><code>rglob</code></span> و اندازه فایل‌ها | فایل <span dir="ltr"><code>directory_report.json</code></span> |
-| 16 | فایل <span dir="ltr"><code>example16.py</code></span> | ساخت و خواندن فایل zip | فایل <span dir="ltr"><code>archive_demo.zip</code></span> |
-| 17 | فایل <span dir="ltr"><code>example17.py</code></span> | پردازش جریانی CSV بزرگ با generator | فایل <span dir="ltr"><code>large_sales.csv</code></span> |
-| 18 | فایل <span dir="ltr"><code>example18.py</code></span> | فایل تنظیمات با <span dir="ltr"><code>configparser</code></span> | فایل <span dir="ltr"><code>app.ini</code></span> |
+<table dir="rtl">
+  <thead>
+    <tr>
+      <th>شماره</th>
+      <th>فایل</th>
+      <th>مفهوم اصلی</th>
+      <th>خروجی مهم</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>فایل <span dir="ltr"><code>example1.py</code></span></td><td>حالت‌های <span dir="ltr"><code>r</code></span>، <span dir="ltr"><code>w</code></span>، <span dir="ltr"><code>a</code></span> و <span dir="ltr"><code>r+</code></span></td><td>فایل متنی <span dir="ltr"><code>modes.txt</code></span></td></tr>
+    <tr><td>2</td><td>فایل <span dir="ltr"><code>example2.py</code></span></td><td>کدگذاری <span dir="ltr"><code>utf-8</code></span>، <span dir="ltr"><code>BOM</code></span> و خطای decode</td><td>فایل‌های متنی فارسی</td></tr>
+    <tr><td>3</td><td>فایل <span dir="ltr"><code>example3.py</code></span></td><td>روش‌های <span dir="ltr"><code>read</code></span>، <span dir="ltr"><code>readline</code></span> و <span dir="ltr"><code>readlines</code></span></td><td>فایل چندخطی</td></tr>
+    <tr><td>4</td><td>فایل <span dir="ltr"><code>example4.py</code></span></td><td>بستن خودکار فایل با context manager</td><td>فایل <span dir="ltr"><code>context_manager.txt</code></span></td></tr>
+    <tr><td>5</td><td>فایل <span dir="ltr"><code>example5.py</code></span></td><td>مسیرها با <span dir="ltr"><code>pathlib.Path</code></span> و جست‌وجو با <span dir="ltr"><code>glob</code></span></td><td>پوشه نمونه مسیرها</td></tr>
+    <tr><td>6</td><td>فایل <span dir="ltr"><code>example6.py</code></span></td><td>داده تو در تو و خطای JSON خراب</td><td>فایل <span dir="ltr"><code>profile.json</code></span></td></tr>
+    <tr><td>7</td><td>فایل <span dir="ltr"><code>example7.py</code></span></td><td>خواندن و نوشتن CSV با سرستون</td><td>فایل <span dir="ltr"><code>people.csv</code></span></td></tr>
+    <tr><td>8</td><td>فایل <span dir="ltr"><code>example8.py</code></span></td><td>جداکننده سفارشی و نقل‌قول در CSV</td><td>فایل <span dir="ltr"><code>courses_semicolon.csv</code></span></td></tr>
+    <tr><td>9</td><td>فایل <span dir="ltr"><code>example9.py</code></span></td><td>سطح‌های لاگ و قالب پیام</td><td>فایل <span dir="ltr"><code>app.log</code></span></td></tr>
+    <tr><td>10</td><td>فایل <span dir="ltr"><code>example10.py</code></span></td><td>فیلتر و تجمیع CSV در گزارش JSON</td><td>فایل <span dir="ltr"><code>sales_report.json</code></span></td></tr>
+    <tr><td>11</td><td>فایل <span dir="ltr"><code>example11.py</code></span></td><td>خطاهای فایل با <span dir="ltr"><code>try</code></span>، <span dir="ltr"><code>except</code></span> و <span dir="ltr"><code>finally</code></span></td><td>خواندن امن فایل</td></tr>
+    <tr><td>12</td><td>فایل <span dir="ltr"><code>example12.py</code></span></td><td>تفاوت فایل متنی و فایل باینری</td><td>فایل <span dir="ltr"><code>bytes_sample.bin</code></span></td></tr>
+    <tr><td>13</td><td>فایل <span dir="ltr"><code>example13.py</code></span></td><td>پروژه پایانی، CSV، لاگ و گزارش JSON</td><td>فایل <span dir="ltr"><code>capstone_report.json</code></span></td></tr>
+    <tr><td>14</td><td>فایل <span dir="ltr"><code>example14.py</code></span></td><td>نوشتن امن با فایل موقت و پشتیبان</td><td>فایل <span dir="ltr"><code>inventory.json</code></span></td></tr>
+    <tr><td>15</td><td>فایل <span dir="ltr"><code>example15.py</code></span></td><td>پیمایش پوشه با <span dir="ltr"><code>rglob</code></span> و اندازه فایل‌ها</td><td>فایل <span dir="ltr"><code>directory_report.json</code></span></td></tr>
+    <tr><td>16</td><td>فایل <span dir="ltr"><code>example16.py</code></span></td><td>ساخت و خواندن فایل zip</td><td>فایل <span dir="ltr"><code>archive_demo.zip</code></span></td></tr>
+    <tr><td>17</td><td>فایل <span dir="ltr"><code>example17.py</code></span></td><td>پردازش جریانی CSV بزرگ با generator</td><td>فایل <span dir="ltr"><code>large_sales.csv</code></span></td></tr>
+    <tr><td>18</td><td>فایل <span dir="ltr"><code>example18.py</code></span></td><td>فایل تنظیمات با <span dir="ltr"><code>configparser</code></span></td><td>فایل <span dir="ltr"><code>app.ini</code></span></td></tr>
+  </tbody>
+</table>
 
 <a id="practice"></a>
 ## تمرین‌ها و پاسخ‌ها
 
 فایل <span dir="ltr"><code>practice_tasks.md</code></span> تمرین‌ها را در پنج بخش مرتب کرده است.
 
-| سطح | تمرین‌ها | پاسخ نمونه |
-| --- | --- | --- |
-| مقدماتی | تمرین‌های 1 تا 4 | فایل <span dir="ltr"><code>practice_solution_beginner.py</code></span> |
-| میانی | تمرین‌های 5 تا 10 | فایل <span dir="ltr"><code>practice_solution_intermediate.py</code></span> |
-| تکمیلی | تمرین‌های 14 تا 18 | فایل <span dir="ltr"><code>practice_solution_advanced.py</code></span> |
-| پروژه پایانی | تمرین 13 | فایل <span dir="ltr"><code>practice_solution.py</code></span> |
+<table dir="rtl">
+  <thead>
+    <tr>
+      <th>سطح</th>
+      <th>تمرین‌ها</th>
+      <th>پاسخ نمونه</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>مقدماتی</td><td>تمرین‌های 1 تا 4</td><td>فایل <span dir="ltr"><code>practice_solution_beginner.py</code></span></td></tr>
+    <tr><td>میانی</td><td>تمرین‌های 5 تا 10</td><td>فایل <span dir="ltr"><code>practice_solution_intermediate.py</code></span></td></tr>
+    <tr><td>تکمیلی</td><td>تمرین‌های 14 تا 18</td><td>فایل <span dir="ltr"><code>practice_solution_advanced.py</code></span></td></tr>
+    <tr><td>پروژه پایانی</td><td>تمرین 13</td><td>فایل <span dir="ltr"><code>practice_solution.py</code></span></td></tr>
+  </tbody>
+</table>
 
 <a id="teaching-notes"></a>
 ## نکته‌های آموزشی
@@ -198,15 +271,18 @@ python practice_solution.py
 <a id="common-errors"></a>
 ## خطاهای رایج
 
-| خطا | معنی |
-| --- | --- |
-| خطای <span dir="ltr"><code>FileNotFoundError</code></span> | مسیر فایل اشتباه است یا فایل هنوز ساخته نشده است. |
-| خطای <span dir="ltr"><code>PermissionError</code></span> | برنامه اجازه خواندن یا نوشتن روی مسیر را ندارد. |
-| خطای <span dir="ltr"><code>UnicodeDecodeError</code></span> | فایل با کدگذاری مورد انتظار خوانده نشده است. |
-| خطای <span dir="ltr"><code>json.JSONDecodeError</code></span> | ساختار JSON خراب است. |
-| خطای <span dir="ltr"><code>ValueError</code></span> | تبدیل مقدار متنی به عدد یا نوع دیگر ممکن نیست. |
-
-<a id="license"></a>
-## مجوز
-
-این پروژه با مجوز <span dir="ltr"><code>MIT</code></span> منتشر شده است. متن کامل مجوز در فایل <span dir="ltr"><code>LICENSE</code></span> قرار دارد.
+<table dir="rtl">
+  <thead>
+    <tr>
+      <th>خطا</th>
+      <th>معنی</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>خطای <span dir="ltr"><code>FileNotFoundError</code></span></td><td>مسیر فایل اشتباه است یا فایل هنوز ساخته نشده است.</td></tr>
+    <tr><td>خطای <span dir="ltr"><code>PermissionError</code></span></td><td>برنامه اجازه خواندن یا نوشتن روی مسیر را ندارد.</td></tr>
+    <tr><td>خطای <span dir="ltr"><code>UnicodeDecodeError</code></span></td><td>فایل با کدگذاری مورد انتظار خوانده نشده است.</td></tr>
+    <tr><td>خطای <span dir="ltr"><code>json.JSONDecodeError</code></span></td><td>ساختار JSON خراب است.</td></tr>
+    <tr><td>خطای <span dir="ltr"><code>ValueError</code></span></td><td>تبدیل مقدار متنی به عدد یا نوع دیگر ممکن نیست.</td></tr>
+  </tbody>
+</table>
