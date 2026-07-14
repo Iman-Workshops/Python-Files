@@ -45,7 +45,7 @@ def main():
     print(f"فایل zip ساخته شد: {ZIP_FILE}")
     print("فایل‌های داخل zip:")
     for name in names:
-        print(f"- {name}")
+        print(f"- نام فایل: {name}")
     print(f"فایل‌ها در این پوشه باز شدند: {EXTRACT_DIR}")
 
 

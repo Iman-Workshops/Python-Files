@@ -121,7 +121,7 @@ with open("persian.txt", "w", encoding="utf-8") as file:
     file.write("سلام پایتون\n")
 ```
 
-### BOM چیست؟
+### مفهوم BOM
 
 عبارت BOM به چند بایت در ابتدای بعضی فایل‌های متنی اشاره دارد. در UTF-8 معمولا لازم نیست، اما بعضی برنامه‌ها آن را می‌نویسند. اگر فایل دارای BOM مشکل ساخت، می‌توان از `utf-8-sig` استفاده کرد.
 
@@ -155,7 +155,7 @@ output_dir.mkdir(exist_ok=True)
 - متدهای `path.read_bytes()` و `path.write_bytes()` برای باینری
 - متد `path.glob("*.txt")` برای پیدا کردن فایل‌ها با الگو
 
-## 9. JSON
+## 9. قالب JSON
 
 قالب JSON برای داده ساخت‌یافته مناسب است. دیکشنری، لیست، رشته، عدد، مقدار بولی و `None` در پایتون به JSON نزدیک هستند.
 
@@ -191,7 +191,7 @@ with open("profile.json", "r", encoding="utf-8") as file:
 - تابع `json.loads` با رشته JSON کار می‌کند.
 - اگر فایل JSON خراب باشد، `json.JSONDecodeError` رخ می‌دهد.
 
-## 10. CSV
+## 10. قالب CSV
 
 قالب CSV برای داده جدولی مناسب است. هر ردیف یک رکورد و هر ستون یک ویژگی است. اگر فایل سرستون دارد، کار با `DictReader` و `DictWriter` روشن‌تر است.
 
@@ -213,7 +213,7 @@ with open("people.csv", "r", encoding="utf-8", newline="") as file:
         print(row["name"])
 ```
 
-### newline=""
+### گزینه newline
 
 در فایل CSV، بهتر است هنگام باز کردن فایل از `newline=""` استفاده شود. این کار جلوی خط خالی ناخواسته در بعضی محیط‌ها را می‌گیرد.
 

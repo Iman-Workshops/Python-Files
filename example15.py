@@ -64,7 +64,7 @@ def main():
 
     print(f"گزارش پوشه ساخته شد: {REPORT_FILE}")
     for record in records:
-        print(f"{record['relative_path']}: {record['size_bytes']} بایت")
+        print(f"مسیر فایل: {record['relative_path']}، اندازه: {record['size_bytes']} بایت")
 
 
 if __name__ == "__main__":

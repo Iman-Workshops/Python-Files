@@ -51,7 +51,7 @@ def solve_json_tasks():
     try:
         json.loads(BROKEN_JSON_FILE.read_text(encoding="utf-8"))
     except json.JSONDecodeError as error:
-        print(f"JSON خراب در خط {error.lineno} خوانده نشد.")
+        print(f"فایل JSON خراب در خط {error.lineno} خوانده نشد.")
 
 
 def solve_students_csv_task():
@@ -96,7 +96,7 @@ def solve_custom_delimiter_task():
         reader = csv.reader(file, delimiter=";")
         print("ردیف‌های فایل با جداکننده ;")
         for row in reader:
-            print(row)
+            print(f"ردیف خوانده شده: {row}")
 
 
 def solve_logging_task():

@@ -67,7 +67,7 @@ def solve_path_task():
 
     print("فایل‌های پیدا شده با glob:")
     for path in sorted(PATH_DIR.glob("*.txt")):
-        print(path.name)
+        print(f"نام فایل: {path.name}")
 
 
 def main():
